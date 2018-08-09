@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WeatherPy HTML</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="sticky-footer.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Weather Py</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu" >
+                    <a class="dropdown-item" href="temperature.html">Temperature</a>
+                    <a class="dropdown-item active" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
+          
+        </div>
+  
+    </nav>
+
+    <!-- Main Body -->
+    <div class="container">
+      <div class="row-fluid">
+            <div class="col-sm-7 clearfix">
+               
+                            <h3>Humidity Information</h3>
+                            <hr>
+                            <div class="clearfix">
+                            
+                                <img class="pull-left" src="Resources/Images/humidity.png" style="width:100%">
+                                <p>There <b>does not</b> seem to be much correlation</p>
+                                <p>
+                                    The purpose of this project was to analyze how weather changes as you get closer to the equator. To get the data, we called OpenWeatherMap API to collect weather information of 500+ cities.
+                                </p>
+                                <p>
+                                    After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we considered included: Temperature, Cloudliness, Wind Speed and Humidity.
+                                    This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and corelations witnessed.
+                                </p>
+                            </div>
+               
+            </div><!--paragraph-->
+
+            <!-- Visualizations -->
+            <div class="col-sm-5 bg-primary clearfix">
+                <h3>Visualizations</h3>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <h6><center>Temperature</h6>
+                        <a href="temperature.html">
+                            <img src="Resources/Images/temperature.png" class="img-responsive" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <h6><center>Humidity</h6>
+                        <a href="humidity.html">
+                            <img src="Resources/Images/Humidity.png" class="img-thumbnail bg-success" style="width:100%">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <h6><center>Cloudiness</h6>
+                        <a href="cloudiness.html">
+                            <img src="Resources/Images/cloudiness.png" class="img-responsive" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <h6><center>Wind Speed</h6>
+                        <a href="windspeed.html">
+                            <img src="Resources/Images/windspeed.png" class="img-responsive" style="width:100%">
+                        </a>
+                    </div>
+
+                </div>
+                <br>
+            </div><!--images container-->
+      </div><!--row-->
+    </div> <!--container-->
+
+    <div class="footer">© 2018 Copyright: <strong>Heerak Amin</strong>.</div>
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>
